@@ -1,0 +1,31 @@
+&JULES_INPUT_GRID
+
+ grid_is_1d = .FALSE.,
+ x_dim_name = 'lon',
+ y_dim_name = 'lat',
+ 
+ nx = 720,
+ ny = 360,
+
+ type_dim_name = 'pseudo',
+ time_dim_name = 'time',
+ soil_dim_name = 'soil',
+/
+
+&JULES_LATLON
+ file='/Data/Input/helix_ANCILS/grid_info1.nc',
+ lat_name='latitude',
+ lon_name='longitude',
+/
+&JULES_LAND_FRAC
+ file='/Data/Input/helix_ANCILS/grid_info1.nc',
+ land_frac_name='land_fraction',
+/
+&JULES_MODEL_GRID
+ land_only   = .TRUE.,
+ use_subgrid = .FALSE.,
+/
+
+&JULES_SURF_HGT
+ zero_height=.TRUE.,
+/

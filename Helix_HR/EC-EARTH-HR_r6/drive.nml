@@ -1,0 +1,23 @@
+&JULES_DRIVE 
+
+ l_imogen       = .FALSE.,
+ 
+ l_daily_disagg=.TRUE.,
+  
+ data_start  = '1971-01-01 00:00:00',
+ data_end    = '2101-01-01 00:00:00',
+ data_period =  86400,
+ 
+ file='/Data/Input/HELIX/EC-EARTH_v2_run6/%vv_%y4.nc',
+ 
+ nvars = 8,
+ var(1) = 'sw_down',   var_name(1) = 'rsds',   tpl_name(1) = 'rsds_bced_1981_2010__ec-earth3-hr_rcp8p5_r6i1p1',      interp(1) = 'nf',
+ var(2) = 'lw_down',   var_name(2) = 'rlds',   tpl_name(2) = 'rlds_bced_1981_2010__ec-earth3-hr_rcp8p5_r6i1p1',      interp(2) = 'nf',
+ var(3) = 'precip',    var_name(3) = 'pr',     tpl_name(3) = 'pr_bced_1981_2010__ec-earth3-hr_rcp8p5_r6i1p1',        interp(3) = 'nf',
+ var(4) = 't',         var_name(4) = 'tas',    tpl_name(4) = 'tas_bced_1981_2010__ec-earth3-hr_rcp8p5_r6i1p1',       interp(4) = 'nf',
+ var(5) = 'wind',      var_name(5) = 'wind',   tpl_name(5) = 'wind_bced_1981_2010__ec-earth3-hr_rcp8p5_r6i1p1',      interp(5) = 'nf',
+ var(6) = 'pstar',     var_name(6) = 'ps',     tpl_name(6) = 'ps_bced_1981_2010__ec-earth3-hr_rcp8p5_r6i1p1',        interp(6) = 'nf',
+ var(7) = 'q',         var_name(7) = 'huss',   tpl_name(7) = 'huss__ec-earth3-hr_rcp8p5_r6i1p1',                     interp(7) = 'nf',
+ var(8) = 'dt_range',  var_name(8) = 'tasmax', tpl_name(8) = 'tasrange_bced_1981_2010_ec-earth3-hr_rcp8p5_r6i1p1',   interp(8) = 'nf',
+
+/

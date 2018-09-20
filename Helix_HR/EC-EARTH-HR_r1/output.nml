@@ -1,0 +1,31 @@
+&JULES_OUTPUT
+ nprofiles=2,
+ output_dir='//Data/Output/Global_HELIX/r1',
+ run_id='v4.3_OF2_EC-EARTH_r1',
+/
+
+&JULES_OUTPUT_PROFILE
+ profile_name = 'Daily',
+ file_period  = -2,
+ output_spinup = .FALSE.,
+ output_main_run = .TRUE.,
+ output_period = 86400,
+ 
+ nvars       = 7,
+ var         =  'runoff' 'surf_roff' 'sub_surf_roff' 'soil_wet' 'smcl' 'ecan_gb' 'esoil_gb' ,
+ output_type =      'M'          'M'             'M'        'M'    'M'       'M'        'M' , 
+ /
+ 
+&JULES_OUTPUT_PROFILE
+ profile_name = 'Monthly',
+ file_period  = -2,
+ output_spinup = .FALSE.,
+ output_main_run = .TRUE.,
+ output_period = -1,
+ 
+ nvars       = 18,
+ var         =  'precip'  'runoff' 'surf_roff' 'sub_surf_roff'  'esoil_gb' 'ecan_gb' 'tfall' 'ext' 'ei_gb'  'soil_wet' 'smcl' 'sm_sat' 'sthf' 'snow_mass_gb' 'snow_melt_gb' 'smc_tot' 't_soil' 'gpp',
+ output_type =       'M'       'M'         'M'             'M'         'M'       'M'     'M'   'M'     'M'         'M'    'M'      'M'    'M'            'M'            'M'       'M'      'M'   'M',  
+/ 
+ 
+

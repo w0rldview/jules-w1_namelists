@@ -1,0 +1,17 @@
+&JULES_PRESCRIBED
+n_datasets = 1
+/
+
+&JULES_PRESCRIBED_DATASET
+data_start       = "1848-01-01 00:00:00",
+data_end         = "2301-01-01 00:00:00",
+data_period      = -2,
+is_climatology   =  F,
+read_list        =  F,
+file             = '/Data/Input/HELIX/ANCILS/CO2_HADGEM2_rcp85_halddeg.nc',
+
+nvars     = 1,
+var       = 'co2_mmr',
+var_name  = 'co2_mmr',
+interp    = 'nf',
+/

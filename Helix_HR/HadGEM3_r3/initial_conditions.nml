@@ -1,0 +1,6 @@
+&JULES_INITIAL
+ 
+ total_snow = .FALSE.,
+ dump_file = .TRUE.,
+ file="/Data/Input/v4.3_OF2_HadGEM_r3.dump.19710101.0.nc",
+/

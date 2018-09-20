@@ -1,0 +1,6 @@
+&JULES_INITIAL
+ 
+ total_snow = .FALSE.,
+ dump_file = .TRUE.,
+ file="/Data/Output/Global_HELIX/v4.3_OF2_EC-EARTH_r2.dump.19710101.0.nc",
+/
