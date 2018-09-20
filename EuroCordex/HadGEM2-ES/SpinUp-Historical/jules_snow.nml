@@ -1,0 +1,5 @@
+&JULES_SNOW
+  nsmax=3,
+  dzsnow = 0.1  0.2  0.2,
+  cansnowpft = .FALSE.  .TRUE.  .FALSE.  .FALSE.  .FALSE.,
+/

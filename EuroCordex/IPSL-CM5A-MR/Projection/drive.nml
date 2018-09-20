@@ -1,0 +1,28 @@
+&JULES_DRIVE 
+
+ l_imogen       = .FALSE.,
+ z1_tq_in       = 1.5,
+ z1_uv_in       = 10.0,
+ 
+ t_for_snow      = 274.15,
+ t_for_con_rain  = 288.15,
+ 
+ l_daily_disagg=.FALSE.,
+  
+ data_start  = '1951-01-01 00:00:00',
+ data_end    = '2101-01-01 00:00:00',
+ data_period =  86400,
+ 
+ file='/Data/Input/EuroCordex/IPSL-CM5A-MR/%vv/%vv_%y4.nc',
+ 
+ nvars = 7,
+ var(1) = 'sw_down',   var_name(1) = 'rsds',      tpl_name(1) = 'rsds',      interp(1) = 'nb',
+ var(2) = 'lw_down',   var_name(2) = 'rlds',      tpl_name(2) = 'rlds',      interp(2) = 'nb',
+ var(3) = 'precip',    var_name(3) = 'prAdjust',   tpl_name(3) = 'prAdjust',  interp(3) = 'nb',
+ var(4) = 't',         var_name(4) = 'tasAdjust', tpl_name(4) = 'tasAdjust', interp(4) = 'nb',
+ var(5) = 'wind',      var_name(5) = 'sfcWind',   tpl_name(5) = 'sfcwind',   interp(5) = 'nb',
+ var(6) = 'pstar',     var_name(6) = 'ps',        tpl_name(6) = 'ps',        interp(6) = 'nb',
+ var(7) = 'q',         var_name(7) = 'huss',      tpl_name(7) = 'huss',      interp(7) = 'nb',
+
+
+/

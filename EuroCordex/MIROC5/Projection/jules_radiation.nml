@@ -1,0 +1,6 @@
+&JULES_RADIATION
+
+ l_cosz        = .FALSE.,
+ l_spec_albedo = .FALSE.,
+
+/

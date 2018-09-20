@@ -1,0 +1,6 @@
+&JULES_INITIAL
+ 
+ total_snow = .FALSE.,
+ dump_file = .TRUE.,
+ file="/Data/Output/Euro_Cordex_bc_2/IPSL/v4.1_mod1_IPSL_bc2_historical.dump.20060101.0.nc",
+/

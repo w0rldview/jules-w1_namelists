@@ -1,0 +1,33 @@
+&JULES_INPUT_GRID
+
+ grid_is_1d = .FALSE.,
+ x_dim_name = 'x',
+ y_dim_name = 'y',
+ 
+ nx = 106,
+ ny = 103,
+
+ type_dim_name = 'pseudo',
+ time_dim_name ='time',
+ soil_dim_name = 'soil',
+
+/
+
+&JULES_LATLON
+ file='/Data/Input/Input_euro44/grid_info_euro44_new.nc',
+ lat_name='lat',
+ lon_name='lon',
+/
+&JULES_LAND_FRAC
+ file='/Data/Input/Input_euro44/grid_info_euro44_new.nc',
+ land_frac_name='land_fraction',
+/
+&JULES_MODEL_GRID
+ land_only   = .FALSE.,
+ use_subgrid = .FALSE.,
+
+/
+
+&JULES_SURF_HGT
+ zero_height=.TRUE.,
+/

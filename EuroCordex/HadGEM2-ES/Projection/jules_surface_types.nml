@@ -1,0 +1,7 @@
+&JULES_SURFACE_TYPES
+  npft = 5,
+  nnvg = 4,
+  soil=8,
+  ice=9,
+  
+/

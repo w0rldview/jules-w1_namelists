@@ -1,0 +1,22 @@
+&JULES_TIME
+
+ l_360  = .TRUE.,
+ l_leap = .FALSE.,
+
+ main_run_start = '1960-01-01 00:00:00',
+ main_run_end   = '2006-01-01 00:00:00',
+ timestep_len=86400,
+/
+
+&JULES_SPINUP
+ max_spinup_cycles=10,
+ spinup_start = '1955-01-01 00:00:00',
+ spinup_end   = '1960-01-01 00:00:00',
+ 
+ terminate_on_spinup_fail = .FALSE.,
+
+ nvars = 2,
+ var          =  'smcl'  't_soil',
+ use_percent  =      F         T,
+ tolerance    =    1.0       0.1
+/

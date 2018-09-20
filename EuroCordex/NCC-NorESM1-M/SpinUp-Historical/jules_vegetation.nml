@@ -1,0 +1,6 @@
+&JULES_VEGETATION 
+ l_q10        = .TRUE.,
+ can_model    = 4,
+ can_rad_mod  = 4
+ ilayers      = 10,
+/

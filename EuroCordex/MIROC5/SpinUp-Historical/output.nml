@@ -1,0 +1,34 @@
+&JULES_OUTPUT
+ nprofiles=2,
+ output_dir='/Data/Output/Euro_Cordex_bc_2/MIROC5',
+ run_id='v4.1_mod1_MIROC5_bc2_historical',
+/
+
+&JULES_OUTPUT_PROFILE
+ profile_name = 'Daily',
+ file_period  = -2,
+ output_spinup = .FALSE.,
+ output_main_run = .TRUE.,
+ output_start = '1971-01-01 00:00:00',
+ output_end   = '2006-01-01 00:00:00',
+ output_period = 86400,
+ 
+ nvars       = 8,
+ var         =  'precip' 'runoff' 'surf_roff' 'sub_surf_roff' 'soil_wet' 'smcl' 'ecan_gb' 'esoil_gb' ,
+ output_type =      'M'       'M'         'M'             'M'        'M'    'M'       'M'       'M' , 
+
+/
+
+&JULES_OUTPUT_PROFILE
+ profile_name = 'Monthly',
+ file_period  = -2,
+ output_spinup = .FALSE.,
+ output_main_run = .TRUE.,
+ output_start = '1971-01-01 00:00:00',
+ output_end   = '2006-01-01 00:00:00',
+ output_period = -1,
+ 
+ nvars       = 17,
+ var         =  'precip' 'rainfall' 'runoff' 'surf_roff' 'sub_surf_roff' 'esoil_gb' 'ecan_gb' 'tfall' 'ext' 'ei_gb'  'soil_wet' 'smcl' 'sm_sat' 'sthf' 'snow_mass_gb' 'snow_melt_gb' 'smc_tot' ,
+ output_type =       'M'        'M'      'M'         'M'             'M'        'M'       'M'     'M'   'M'     'M'         'M'    'M'      'M'    'M'            'M'            'M'       'M' ,                 ,
+ / 
